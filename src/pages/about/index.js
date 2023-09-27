@@ -7,7 +7,8 @@ import {
   meta,
   worktimeline,
   skills,
-  services,
+  Education,
+  interest
 } from "../../content_option";
 
 export const About = () => {
@@ -55,6 +56,45 @@ export const About = () => {
             </table>
           </Col>
         </Row>
+        <Row className=" sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Education</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {Education.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row">{data.jobtitle}</th>
+                      <td>{data.where}</td>
+                      <td>{data.date}</td>
+                      <td>{data.cgpa}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
+        <Row className=" sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Interests</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {interest.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row">{data.title}</th>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
@@ -74,21 +114,6 @@ export const About = () => {
                       <div className="progress-value">{data.value}%</div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
-          </Col>
-          <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
                 </div>
               );
             })}

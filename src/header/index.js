@@ -4,6 +4,11 @@ import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import {
+  FaGithub,
+  FaTwitter,
+  FaFacebookF,
+} from "react-icons/fa";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -50,13 +55,13 @@ const Headermain = () => {
               </div>
             </div>
           </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
+          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 h-10 p-3">
             <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
+            <a href={socialprofils.facebook}><FaFacebookF /></a>
+            <a href={socialprofils.github}><FaGithub /></a>
+            <a href={socialprofils.twitter}><FaTwitter /></a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <p className="copyright m-0">Copyright @ {logotext}</p>
           </div>
         </div>
       </header>

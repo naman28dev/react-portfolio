@@ -145,7 +145,7 @@ export const ContactUs = () => {
                 name="message"
                 placeholder="Message"
                 rows="5"
-                value={formData.message}
+                value={formData.message || ""}
                 onChange={handleChange}
                 required
               ></textarea>
