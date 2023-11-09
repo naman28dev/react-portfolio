@@ -12,7 +12,7 @@ const introdata = {
         third: "I develope web applications",
     },
     description: "Hey! I am an inquisitive, energetic computer science enthusiast skilled in leadership, with a strong foundation in math, logic and cross-platform coding. A young aspirant aiming to become a full stack developer while gaining knowledge in web development and looking forward to contributing to open source projects and seeking to leverage solid skills in collaboration, communication and development as a budding programmer.",
-    your_img_url: "",
+    your_img_url: "https://scontent.xx.fbcdn.net/v/t1.15752-9/382258088_1442436453270130_756356529767100896_n.jpg?stp=dst-jpg_p180x540&_nc_cat=110&ccb=1-7&_nc_sid=510075&_nc_ohc=snrFQmN9Ko4AX-b19_M&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRmOMhaCFRU1T1tdkmCU60KMO2drwDFwMbDsAbTQsOZCA&oe=65749260",
 };
 
 const dataabout = {
